@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Database files
+*.db
+*.sqlite3
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDE / Config
+.idea/
+.vscode/
+.mplconfig/
+
+# Scratch & Temporary
+scratch/
+temp*

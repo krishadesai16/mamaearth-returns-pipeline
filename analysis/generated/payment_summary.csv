@@ -1,0 +1,4 @@
+payment_method,count,returned_orders,return_rate_pct
+COD,54,24,44.4
+UPI,53,10,18.9
+CARD,68,10,14.7

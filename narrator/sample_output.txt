@@ -1,0 +1,8 @@
+Situation
+Mamaearth's cleaned total booked revenue stands at INR 97,358.30, reconciled from the raw total of INR 99,860.20. The exact variance of INR 2,501.90 is entirely attributable to five double-submitted duplicate orders identified and removed during data cleaning. This reconciled baseline provides regional ops and finance with an accurate foundation for evaluating return exposures and demand patterns.
+
+Complication
+Returns are heavily concentrated rather than evenly distributed. Cash on Delivery (COD) orders suffer an alarming return rate of 44.4%, more than triple CARD (14.7%) and more than double UPI (18.9%). Multi-level segmentation identifies COD in Tier-2 cities as the single highest-risk segment, peaking at a 54.5% return rate. Furthermore, quantity outlier analysis reveals that January's apparent revenue of INR 29,582.10 was artificially inflated by two bulk orders; when corrected to INR 11,637.10, March emerges as the true organic peak month at INR 20,318.90.
+
+Resolution
+Operations and growth teams must implement targeted return-mitigation workflows rather than blanket policies. Prioritize two-step order confirmation protocols and delivery tracking in Tier-2 COD corridors, while testing small prepaid checkout incentives to migrate customers to UPI and Card. Fix frontend duplicate order submissions, validate B2B bulk orders separately from D2C demand, and align regional inventory planning with the true March seasonal peak.
