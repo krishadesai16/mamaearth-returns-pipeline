@@ -21,6 +21,11 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
+
+# Fix Windows terminal Unicode issue (₹ symbol etc.)
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
 FINDINGS_PATH = ROOT / "narrator" / "findings.json"
@@ -121,7 +126,7 @@ def generate_narrative_gemini(findings: dict, api_key: str) -> dict:
         from google.genai import types
 
         prompt = build_prompt(findings)
-        model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+        model_name = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
         # HttpOptions timeout is in milliseconds (30000 ms = 30 seconds)
         client = genai.Client(

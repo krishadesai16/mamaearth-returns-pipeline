@@ -24,3 +24,9 @@ Thumbs.db
 # Scratch & Temporary
 scratch/
 temp*
+
+# Files not in submission structure
+sql/run_sql.py
+narrator/sample_output.txt
+requirements.txt
+analysis/generated/
